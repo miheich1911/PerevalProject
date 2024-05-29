@@ -31,7 +31,7 @@ class PerevalSerializer(serializers.ModelSerializer):
     tourist_id = UserSerializer()
     coord_id = CoordsSerializer()
     level = LevelSerializer()
-    images = ImageSerializer(many=True)
+    image = ImageSerializer(many=True)
     add_time = serializers.DateTimeField(format='%d-%m-%Y %H:%M:%S')
 
     class Meta:
