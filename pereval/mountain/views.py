@@ -1,3 +1,4 @@
+import django_filters
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from .models import Users, Coords, Level, Image, Pereval
@@ -27,6 +28,7 @@ class ImageViewset(viewsets.ModelViewSet):
 class PerevalViewset(viewsets.ModelViewSet):
     queryset = Pereval.objects.all()
     serializer_class = PerevalSerializer
+    filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
     filterset_fields = ('tourist_id__email',)
 
     def submitData(self, request, *args, **kwargs):

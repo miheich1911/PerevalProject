@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
+
+import django_filters.rest_framework
+import rest_framework.renderers
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
@@ -41,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mountain',
     'rest_framework',
+    'django_filters',
 
 ]
 
@@ -137,3 +141,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
