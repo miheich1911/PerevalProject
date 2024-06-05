@@ -29,10 +29,10 @@ class Coords(models.Model):
 
 
 class Level(models.Model):
-    winter_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='winter')
-    spring_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='winter')
-    summer_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='winter')
-    autumn_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='winter')
+    winter_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='4A')
+    spring_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='4A')
+    summer_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='4A')
+    autumn_lev = models.CharField(max_length=2, choices=LEVEL_CHOICES, default='4A')
 
 
 class Image(models.Model):
