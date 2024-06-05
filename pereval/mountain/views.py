@@ -53,7 +53,7 @@ class PerevalViewset(viewsets.ModelViewSet):
 
     def partial_update(self, request, *args, **kwargs):
         pereval = self.get_object()
-        if pereval.status == 'new':
+        if pereval.status == 'NW':
             serializer = PerevalSerializer(pereval, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
