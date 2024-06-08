@@ -18,6 +18,7 @@ from django.urls import include, path
 from django.contrib import admin
 from rest_framework import routers
 from mountain import views
+from .yasg import urlpatterns as doc_urls
 
 
 router = routers.DefaultRouter()
@@ -33,3 +34,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/', include(router.urls))
     ]
+
+urlpatterns += doc_urls

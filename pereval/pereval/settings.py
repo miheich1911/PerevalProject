@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mountain',
     'rest_framework',
+    'drf_yasg',
     'django_filters',
 
 ]
