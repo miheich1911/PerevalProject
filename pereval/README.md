@@ -160,5 +160,28 @@ ______
 
 ***Отчет о покрытии тестами:***
 
+Name                                  Stmts   Miss  Cover
+---------------------------------------------------------
+manage.py                                11      2    82%
+mountain\__init__.py                      0      0   100%
+mountain\admin.py                         1      0   100%
+mountain\apps.py                          4      0   100%
+mountain\migrations\0001_initial.py       6      0   100%
+mountain\migrations\__init__.py           0      0   100%
+mountain\models.py                       33      1    97%
+mountain\resources.py                    10      0   100%
+mountain\serializers.py                  53     20    62%
+mountain\tests.py                         1      0   100%
+mountain\views.py                        40     16    60%
+pereval\__init__.py                       0      0   100%
+pereval\asgi.py                           4      4     0%
+pereval\settings.py                      23      0   100%
+pereval\urls.py                          13      0   100%
+pereval\wsgi.py                           4      4     0%
+pereval\yasg.py                           6      0   100%
+tests.py                                125      0   100%
+---------------------------------------------------------
+TOTAL                                   334     47    86%
 
-![2023-04-10_002254](https://user-images.githubusercontent.com/108303572/230792571-f0b5e03c-b6cd-4263-87a1-b8fb9ab071a4.jpg)
+
+
